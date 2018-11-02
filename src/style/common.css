@@ -1,0 +1,127 @@
+/*公共样式--开始*/
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+  margin: 0;
+  padding: 0;
+}
+*{box-sizing: border-box;}
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "PingFang SC", sans-serif;
+  font-size:14px;
+}
+h1, h2, h3, h4, h5, h6{font-weight:normal;}
+ul,ol {
+  list-style: none;
+}
+
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+i{
+    font-style: normal;
+}
+
+/*设置全局的css,:global()包含的类将不会被css-loder处理命名,而是直接抛出原类名*/
+:global(.clearfix){
+    zoom: 1;
+}
+:global(.clearfix:after){
+    content: ".";
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    overflow:hidden;
+}
+/*hover文字提示样式*/
+:global(.toolTip){
+    position: relative;
+}
+:global(.toolTip span){
+    background: #ffffff;
+    border: 1px solid #5B71F9;
+    color: #5B71F9;
+    position: absolute;
+    left: 12px;
+    bottom: -38px;
+    text-align: center;
+    white-space:nowrap;
+    padding: 0 10px;
+    transform: translate(-50%,0);
+    height: 28px;
+    line-height: 28px;
+    border-radius: 4px;
+    display: none;
+}
+:global(.toolTip span::after){
+    content: '';
+    width: 8px;
+    height:8px;
+    background: #ffffff;
+    border-left: 1px solid #5b71f9;
+    border-top: 1px solid #5b71f9;
+    position: absolute;
+    transform:rotate(45deg) translate(-50%,0);
+    margin-left: -1px;
+    left: 50%;
+    top: -2px;
+}
+:global(.toolTip:hover span){
+    display: block;
+}
+/*自定义表格样式*/
+:global(.ant-table-thead tr th){
+    background: #f7eadf;
+    border-bottom: none !important;
+    border-radius: 0px !important;
+    padding: 14px 16px;
+}
+:global(.ant-table-tbody tr td){
+    border-bottom: none !important;
+    padding: 17px 16px;
+}
+:global(.accountTableOdd){
+    background: #f4f3f3;
+    border-bottom: none !important;
+}
+:global(.wjsTable .ant-table-placeholder){
+    padding-bottom: 50px;
+    border-bottom: none;
+}
+:global(.wjsTable .ant-table-placeholder::before){
+    content: '';
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: 50px auto 10px;
+    background: url("https://f.weijinshi.com/public/front/images/norecord.png") center center no-repeat;
+}
+/*自定义分页样式*/
+:global(.wjsTable .ant-pagination-item){
+    width: 27px;
+    height: 30px;
+    min-width: 27px;
+    background: #eee;
+    border: none;
+}
+:global(.wjsTable .ant-pagination-item a){
+    color: #666666;
+}
+:global(.wjsTable .ant-pagination-item-active),
+:global(.wjsTable .ant-pagination-item:hover){
+    border: none;
+    background: #5B71F9;
+}
+:global(.wjsTable .ant-pagination-item-active a),
+:global(.wjsTable .ant-pagination-item:hover a){
+    color: #ffffff;
+}

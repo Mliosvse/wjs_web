@@ -1,0 +1,333 @@
+.content{
+  background: #f0f0f0;
+  .title{
+    width: 100%;
+    background: #5B71F9;
+    .menu{
+      width: 1200px;
+      height: 50px;
+      margin: 0 auto;
+      li{
+        width: 118px;
+        text-align: center;
+        float: left;
+        position: relative;
+        a{
+          color: #ffffff;
+          line-height: 50px;
+          font-size: 16px;
+        }
+        i{
+          width: 14px;
+          height: 14px;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background: url("https://f.weijinshi.com/public/front/images/rewardicon.png") no-repeat;
+        }
+      }
+      li:hover{
+        background: #7d90f4;
+      }
+      li.selectd{
+        background: #7d90f4;
+      }
+    }
+  }
+  .userInfo{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 8px 0px;
+    position: relative;
+    .userImg{
+      float: left;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 18px;
+      position: relative;
+      .upload{
+        width: 100%;
+        height: 64px;
+      }
+      img{
+        width: 64px;
+        height: 64px;
+      }
+      .shading{
+        display: none;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.3);
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: center;
+        line-height: 64px;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 12px;
+      }
+    }
+    .userImg:hover{
+      .shading{
+        display: block;
+      }
+    }
+    .tip{
+      background: #ffffff;
+    }
+    .name{
+      float: left;
+      line-height: 64px;
+      color: #333;
+      a{
+        color: #333;
+      }
+      a:hover{
+        color: #5B71F9;
+      }
+    }
+    .rank{
+      float: left;
+      padding-top: 20px;
+      margin-left: 10px;
+      img{
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .safe{
+      float: left;
+      line-height: 64px;
+      margin-left: 10px;
+      a{
+        color: #5B71F9;
+        font-weight: bold;
+      }
+      span{
+        color: #333333;
+      }
+    }
+    .step{
+      float: left;
+      margin-left: 20px;
+      li{
+        float: left;
+        width: 24px;
+        height: 24px;
+        background: #999999;
+        line-height: 24px;
+        margin-right: 10px;
+        margin-top: 20px;
+        border-radius: 2px;
+        a{
+          display: block;
+          width: 24px;
+          height: 24px;
+          background: url('../images/icon.png') no-repeat -334px -100px;
+        }
+      }
+      li:nth-of-type(2){
+        a{
+          background: url('../images/icon.png') no-repeat -310px -100px;
+        }
+      }
+      li:nth-of-type(3){
+        a{
+          background: url('../images/icon.png') no-repeat -310px -124px;
+        }
+      }
+      li:nth-of-type(4){
+        a{
+          background: url('../images/icon.png') no-repeat -334px -124px;
+        }
+      }
+    }
+    .safeRank{
+      float: left;
+      width: 204px;
+      line-height: 64px;
+      &>span{
+        float: left;
+        width: 35%;
+      }
+      &>div{
+        width: 65%;
+        float: left;
+        margin-top: 22px;
+      }
+    }
+    .bell{
+      float: left;
+      width: 24px;
+      height: 24px;
+      background: url("../images/icon.png") no-repeat -360px -98px;
+      margin-top: 20px;
+      margin-left: 20px;
+      position: relative;
+      i{
+        font-size: 12px;
+        color: #5B71F9;
+        position: absolute;
+        top: -5px;
+        right: -4px;
+      }
+    }
+    .qrcode{
+      padding: 5px;
+      background: #ffffff;
+      float: left;
+      margin-left: 30px;
+    }
+    .signIn{
+      float: left;
+      margin-left: 20px;
+      .integral{
+        padding: 20px 0 20px 0px;
+        color: #666;
+        span{
+          color: #ff6600;
+        }
+      }
+      .edit{
+        margin-left: 25px;
+        position: relative;
+        padding-left: 30px;
+        color: #cf2c2c;
+        font-size: 16px;
+        cursor: default;
+        i{
+          position: absolute;
+          top: -2px;
+          left: 0;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background:url("../images/icon.png") no-repeat 0 -294px;
+        }
+      }
+      .assets{
+        right: 0;
+        bottom: 0;
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+        position: absolute;
+        background: #E4E3E3;
+        line-height: 30px;
+        text-align: center;
+        cursor: pointer;
+        &>span{
+          float: left;
+          margin-left: 20px;
+        }
+        .assetsIcon{
+          float: left;
+          width: 11px;
+          height: 10px;
+          margin-top: 10px;
+          margin-left: 5px;
+          background: url("../images/icon.png") no-repeat;
+          background-position-x: -390px;
+          background-position-y: -100px;
+        }
+      }
+      .assets.active{
+        background: #5B71F9;
+        color: #ffffff;
+        .assetsIcon{
+          background: url("../images/icon.png") no-repeat;
+          background-position-x: -410px;
+          background-position-y: -110px;
+        }
+      }
+      .assets.active:hover{
+        .assetsIcon{
+          background: url("../images/icon.png") no-repeat;
+          background-position-x: -410px;
+          background-position-y: -110px;
+        }
+      }
+      .assets:hover{
+        background: #5B71F9;
+        color: #ffffff;
+        .assetsIcon{
+          background: url("../images/icon.png") no-repeat;
+          background-position-x: -410px;
+          background-position-y: -100px;
+        }
+      }
+
+    }
+  }
+  .assetsbox{
+    width: 1200px;
+    margin: 0 auto 30px;
+    background: #ffffff;
+    height: 160px;
+    overflow: hidden;
+    transition: all 0.5s;
+    border: 1px solid #E6E6E6;
+    background: #fff;
+    padding-left: 47px;
+    .record{
+      float: left;
+      margin-top: 33px;
+      width: 230px;
+      padding-left: 30px;
+      &>div{
+        line-height: 18px;
+        color: #333333;
+      }
+      &>p{
+        line-height: 57px;
+        i{
+          font-size: 24px;
+          color: #5B71F9;
+        }
+      }
+      &>span{
+        line-height: 18px;
+      }
+    }
+    .assetTable{
+      background: #5B71F9;
+      float: left;
+      width: 503px;
+      text-align: center;
+      color: #fff;
+      margin-top: 35px;
+      td{
+        border: 1px solid #fff;
+      }
+    }
+    .assetsBtn{
+      float: left;
+      margin-top: 33px;
+      margin-left: 60px;
+      width: 89px;
+      a{
+        float: left;
+        width: 89px;
+        line-height: 34px;
+        border-radius: 4px;
+        text-align: center;
+        background: #5B71F9;
+        color: #ffffff;
+        margin-bottom: 25px;
+      }
+      a:nth-of-type(2){
+        background: #ffffff;
+        color: #5B71F9;
+        border: 1px solid #5B71F9;
+      }
+    }
+  }
+  .assetsbox_hide{
+    height: 0px;
+    border: 1px solid #f0f0f0;
+    margin: 0 auto 10px;
+  }
+}

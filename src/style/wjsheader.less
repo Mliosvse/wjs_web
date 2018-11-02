@@ -1,0 +1,181 @@
+.wjsheader{
+  background: #ffffff;
+  min-width: 1200px;
+  .wjsheader_top{
+    height: 30px;
+    width: 1200px;
+    color: #4e4e4e;
+    font-size: 12px;
+    margin: 0 auto;
+    .wjsheaderT_left{
+      float: left;
+      height: 30px;
+      &>p{
+        float: left;
+        line-height: 30px;
+        margin-right: 60px;
+        margin-bottom: 0;
+      }
+    }
+    .wjsheaderT_right{
+      float: right;
+      li{
+        float: right;
+        position: relative;
+        text-align: right;
+        padding-left: 30px;
+        &>a{
+          color: #4e4e4e;
+          line-height: 30px;
+          height: 30px;
+          display: block;
+          position: relative;
+          .iphone{
+            background-image: url(https://f.weijinshi.com/public/front/images/icon.png);
+            float: left;
+            width: 12px;
+            height: 20px;
+            background-position: 0 0;
+            transition: background-position .2s;
+            margin-top: 5px;
+            margin-right: 5px;
+          }
+          .qrcode{
+            width: 112px;
+            position: absolute;
+            background: #ffffff;
+            color: #666;
+            border: 1px solid #e5e5e5;
+            left: -18px;
+            top: 50px;
+            transition: all 0.25s;
+            opacity: 0;
+            z-index: -6;
+            i{
+              width: 10px;
+              height: 6px;
+              position: absolute;
+              top: -6px;
+              left: 45px;
+              background-image: url(https://f.weijinshi.com/public/front/images/icon.png);
+              background-position: -20px 0;
+            }
+            img{
+              display: block;
+              margin: 5px auto 0;
+              width: 80px;
+              height: 80px;
+            }
+            p{
+              text-align: center;
+              line-height: 20px;
+              margin-bottom: 5px;
+            }
+          }
+        }
+        &>a:hover{
+          color: #F45045;
+          .iphone{
+            background-position: 0 -22px;
+          }
+          .qrcode{
+            z-index: 6;
+            top: 32px;
+            opacity: 1;
+          }
+        }
+      }
+      .hr_gapLine::after{
+        content: '';
+        display: block;
+        width: 1px;
+        height: 10px;
+        background: #e7e7e7;
+        top: 10px;
+        left:15px;
+        position: absolute;
+      }
+    }
+  }
+  .wjsheader_bottom{
+    height: 112px;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 17px 0px;
+    .wjsheaderB_content{
+      width: 1200px;
+      height: 77px;
+      margin: 0 auto;
+      &>img{
+        height: 77px;
+        float: left;
+      }
+      .wjshbc_menu{
+        color: #474747;
+        float: right;
+        li{
+          float: left;
+          font-size: 16px;
+          line-height: 77px;
+          margin-right: 60px;
+          cursor: pointer;
+          a{
+            color: #474747;
+            padding-bottom: 10px;
+          }
+        }
+        li:hover{
+          a{
+            color: #5B71F9;
+          }
+        }
+        li.active{
+          a{
+            border-bottom: 2px solid #5B71F9;
+            color: #5B71F9;
+          }
+        }
+      }
+      .wjsbc_menuAccount{
+        float: right;
+        height: 77px;
+        div{
+          width: 125px;
+          height: 36px;
+          line-height: 36px;
+          text-align: center;
+          border:1px solid #5B71F9;
+          color: #5B71F9;
+          margin-top: 20px;
+          font-size: 16px;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+        div:hover{
+          background: #5B71F9;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+//  滚动后fixed头部
+  .wjsheader_fixedH{
+    width: 100%;
+    min-width: 1200px;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    z-index: 10;
+    border: none;
+  }
+  .wjsheader_fixedS{
+    height: 112px;
+    transition: height 0.3s ease-in;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.22);
+
+  }
+}

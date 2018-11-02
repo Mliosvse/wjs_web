@@ -1,0 +1,72 @@
+.home{
+  height: 800px;
+  //banner部分
+  .banner{
+    position: relative;
+    .carousel{
+      width: 100%;
+      min-width: 1200px;
+      height: 400px;
+      position: relative;
+      .bannerItem{
+        width: 100%;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+        .bannerImg {
+          position: absolute;
+          display: block;
+          height: 400px;
+          top: 0;
+          left: 50%;
+          margin-left: -1500px;
+        }
+      }
+    }
+    .btnSpan{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 9;
+      transition: all 0.2s;
+      width: 40px;
+      height: 80px;
+      overflow: hidden;
+      visibility: hidden;
+      margin-top: -40px;
+      opacity: 0.8;
+    }
+    .preBtn{
+      margin-left: -640px;
+      background: url('http://twjs1.weijinshi.com/public/front/images/banner-prev.png') no-repeat;
+    }
+    .nextBtn{
+      margin-left: 600px;
+      background: url('http://twjs1.weijinshi.com/public/front/images/banner-next.png') no-repeat;
+    }
+  }
+  .banner:hover{
+    .btnSpan{
+      visibility: visible;
+    }
+  }
+  //合作机构
+  .cooperate{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    .cooperateBox{
+      width: 1236px;
+      position: relative;
+      left: -20px;
+      .cooperateItem{
+        margin: 0 20px;
+        .cooperateImg{
+          width: 167px;
+          height: 56px;
+          border: 1px solid #e8e8e8;
+        }
+      }
+    }
+  }
+}
